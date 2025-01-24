@@ -1,0 +1,358 @@
+@import './variables.css';
+
+@font-face {
+  font-family: "Karla";
+  src: url(/assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+
+
+body{
+  font-family: var(--main-font);
+  height: fit-content;
+  width: fit-content;
+}
+
+main{
+  background-color: var(--light-green);
+  height: fit-content;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+
+.contact-form-section{
+  width: 40%;
+  height: fit-content;
+  margin: 50px auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.section-title{
+  color: var(--dark-grey);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-form{
+  width: 100%;
+}
+
+
+
+.flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-label-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0px;
+}
+
+.label, legend{
+  margin-bottom: 6px;
+  color: var(--dark-grey);
+}
+
+.input{
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid var(--medium-grey);
+  padding-left: 14px;
+  outline: none;
+  margin-bottom: 5px;
+  transition: all ease-in-out .25s;
+}
+
+.input:focus{
+  border-color: var(--medium-green);
+  box-shadow: 0 0 1px var(--medium-green); /* Add a custom glow */
+}
+
+.input:hover{
+  border-color: var(--medium-green);
+  cursor: pointer;
+}
+
+.error{
+  visibility: hidden;
+  font-size: 14px;
+  color: var(--red);
+}
+
+fieldset{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fieldset-span{
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+
+.email-address{
+  width: 100%;
+}
+.email-input{
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.flex-box-input-label-container{
+  width: 47%;
+}
+
+.flex-box-input{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-radio{
+  appearance: none; /* Remove browser styling */
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--medium-grey);
+  border-radius: 50%; /* Make it circular */
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.input-radio:checked {
+  background-color: var(--white);
+  border-color: var(--medium-green);
+}
+
+.input-radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2.3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--medium-green); /* Inner dot */
+}
+
+.radio-label{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between radio button and text */
+  padding: 5px 10px;
+  height: 40px;
+  border: 1px solid var(--medium-grey);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  width: 47%; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+
+/* Target the label directly when it contains a checked input */
+.radio-label:has(input:checked) {
+  background-color: var(--light-green);
+  border-color: var(--dark-green);
+}
+
+
+.message-input-container{
+  width: 100%;
+  padding-bottom: 0;
+}
+.message-input{
+  width: 100%;
+  height: 70px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+
+.check-box-container{
+  justify-content: flex-start;
+  margin-bottom: 55px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.checkbox-error{
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.checkbox{
+  appearance: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.checkbox:hover{
+  border-color: var(--medium-green);
+  box-shadow: 0 0 1px var(--medium-green); /* Add a custom glow */
+}
+.checkbox:focus-visible{
+  border-color: var(--medium-green);
+  box-shadow: 0 0 1px var(--medium-green); /* Add a custom glow */
+}
+
+.checkbox::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.checkbox:checked::after{
+  content: '';
+  position: absolute;
+  top: 0px; /* Adjust position as needed */
+  left: 0px; /* Adjust position as needed */
+  font-size: 10px; /* Adjust font size as needed */
+  color: var(--white);
+  background: var(--medium-green);
+}
+
+.checkbox-label{
+  color: var(--dark-grey);
+}
+
+.submit-btn{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+  background-color: var(--medium-green);
+  color: var(--white);
+  transition: all .25s;
+}
+
+.submit-btn:hover{
+  cursor: pointer;
+  background-color: hsl(169, 72%, 32%);
+}
+
+.submit-btn:active{
+  background-color: hsl(169, 72%, 32%);
+  opacity: 0.8;
+}
+
+.submit-btn:focus-visible {
+  outline: 1px solid hsl(169, 70%, 57%);
+  box-shadow: 0 0 2px hsl(169, 70%, 57%); /* Add a custom glow */
+}
+
+
+
+
+
+
+
+@media (max-width: 1240px) {
+  .contact-form-section{
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1040px) {
+  .contact-form-section{
+    width: 70vw;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 600px) {
+
+  main{
+    height: fit-content;
+  }
+
+  .contact-form-section{
+    width: 80vw;
+  }
+
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .flex-box-input-label-container,.radio-label{
+    width: 100%;
+  }
+
+.check-box-container{
+  flex-direction: row;
+}
+} 
+
+
+
+/* Mobile */
+@media (max-width: 440px) {
+  .checkbox-error{
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .contact-form-section{
+    margin: 30px auto;
+    padding: 15px;
+    width: 90vw;
+    box-sizing: border-box;
+  }
+
+  .check-box-container{
+    justify-content: space-between;
+  }
+
+  .message-input {
+    height: 150px;
+  }
+
+  .checkbox {
+    margin-right: 10px;
+    width: 25px;
+    height: 20px;
+  }
+
+  .checkbox::after{
+    width: 25px;
+    height: 20px;
+  }
+} 

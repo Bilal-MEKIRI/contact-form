@@ -1,0 +1,40 @@
+@import "./variables.css";
+
+
+.success-message-container{
+
+  display: none;
+
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--dark-grey);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  margin-bottom: 0;
+  color: white;
+}
+
+.validation{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.success-check{
+  margin-right: 10px;
+}
+
+p{
+  color: var(--light-green);
+  font-size: 15px;
+}
+
+@media (max-width: 470px) {
+  
+.success-message-container{
+  width: 80vw;
+}
+
+}
