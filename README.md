@@ -54,8 +54,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/your-repo-url)
-- [Live Site URL](https://your-live-site-url.netlify.app)
+- [Solution URL](https://github.com/Bilal-MEKIRI/contact-form)
+- [Live Site URL](https://contact-form-challenge-femc.netlify.app/)
 
 ---
 
