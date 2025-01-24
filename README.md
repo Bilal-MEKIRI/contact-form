@@ -93,8 +93,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn - [Your Name](https://www.linkedin.com/in/your-profile/)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/Bilal-MEKIRI)
 
 ---
 
